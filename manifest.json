@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Açoriano Oriental Unblocker",
+	"short_name": "aou",
+	"description": "Unlock premium articles from Açoriano Oriental",
+	"version": "1.0",
+	"icons": { "16": "16.png",
+			   "48": "48.png",
+			   "128": "128.png"
+	},
+	"content_scripts": [
+		{
+			"matches":[ "https://www.acorianooriental.pt/noticia/*" ],
+			"js": ["js/content.js"],
+			"run_at": "document_end"
+		}
+	]
+}
